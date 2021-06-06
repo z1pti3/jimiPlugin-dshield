@@ -1,0 +1,1302 @@
+{
+   "name": "dshield",
+   "author": "z1p",
+   "version": 0.1,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "dshieldBackscatter": {
+         "display_name": "dshieldBackscatter",
+         "className": "_dshieldBackscatter",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "rows",
+               "schema_value": "rows",
+               "type": "input",
+               "label": "rows",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldCloudIPs": {
+         "display_name": "dshieldCloudIPs",
+         "className": "_dshieldCloudIPs",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldCloudCidrs": {
+         "display_name": "dshieldCloudCidrs",
+         "className": "_dshieldCloudCidrs",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldCurrentHandler": {
+         "display_name": "dshieldCurrentHandler",
+         "className": "_dshieldCurrentHandler",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldInfoconLevel": {
+         "display_name": "dshieldInfoconLevel",
+         "className": "_dshieldInfoconLevel",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldIntelfeed": {
+         "display_name": "dshieldIntelfeed",
+         "className": "_dshieldIntelfeed",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldIPInfo": {
+         "display_name": "dshieldIPInfo",
+         "className": "_dshieldIPInfo",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldIPDetails": {
+         "display_name": "dshieldIPDetails",
+         "className": "_dshieldIPDetails",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldPortInfo": {
+         "display_name": "dshieldPortInfo",
+         "className": "_dshieldPortInfo",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "port",
+               "schema_value": "port",
+               "type": "input",
+               "label": "port",
+               "description": ""
+            },
+            {
+               "schema_item": "port",
+               "schema_value": "port",
+               "type": "input",
+               "label": "port",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldPortInfoByDate": {
+         "display_name": "dshieldPortInfoByDate",
+         "className": "_dshieldPortInfoByDate",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "port",
+               "schema_value": "port",
+               "type": "input",
+               "label": "port",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "port",
+               "schema_value": "port",
+               "type": "input",
+               "label": "port",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldTopPorts": {
+         "display_name": "dshieldTopPorts",
+         "className": "_dshieldTopPorts",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "records",
+               "schema_value": "records",
+               "type": "input",
+               "label": "records",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldTopIPs": {
+         "display_name": "dshieldTopIPs",
+         "className": "_dshieldTopIPs",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "records",
+               "schema_value": "records",
+               "type": "input",
+               "label": "records",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldAttackSources": {
+         "display_name": "dshieldAttackSources",
+         "className": "_dshieldAttackSources",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "records",
+               "schema_value": "records",
+               "type": "input",
+               "label": "records",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldASNLookup": {
+         "display_name": "dshieldASNLookup",
+         "className": "_dshieldASNLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "rows",
+               "schema_value": "rows",
+               "type": "input",
+               "label": "rows",
+               "description": ""
+            },
+            {
+               "schema_item": "asn",
+               "schema_value": "asn",
+               "type": "input",
+               "label": "asn",
+               "description": ""
+            },
+            {
+               "schema_item": "asn",
+               "schema_value": "asn",
+               "type": "input",
+               "label": "asn",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldDailySummary": {
+         "display_name": "dshieldDailySummary",
+         "className": "_dshieldDailySummary",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "startDate",
+               "schema_value": "startDate",
+               "type": "input",
+               "label": "startDate",
+               "description": ""
+            },
+            {
+               "schema_item": "endDate",
+               "schema_value": "endDate",
+               "type": "input",
+               "label": "endDate",
+               "description": ""
+            },
+            {
+               "schema_item": "startDate",
+               "schema_value": "startDate",
+               "type": "input",
+               "label": "startDate",
+               "description": ""
+            },
+            {
+               "schema_item": "endDate",
+               "schema_value": "endDate",
+               "type": "input",
+               "label": "endDate",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldProject404Summary": {
+         "display_name": "dshieldProject404Summary",
+         "className": "_dshieldProject404Summary",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "startDate",
+               "schema_value": "startDate",
+               "type": "input",
+               "label": "startDate",
+               "description": ""
+            },
+            {
+               "schema_item": "endDate",
+               "schema_value": "endDate",
+               "type": "input",
+               "label": "endDate",
+               "description": ""
+            },
+            {
+               "schema_item": "startDate",
+               "schema_value": "startDate",
+               "type": "input",
+               "label": "startDate",
+               "description": ""
+            },
+            {
+               "schema_item": "endDate",
+               "schema_value": "endDate",
+               "type": "input",
+               "label": "endDate",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldProject404": {
+         "display_name": "dshieldProject404",
+         "className": "_dshieldProject404",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "rows",
+               "schema_value": "rows",
+               "type": "input",
+               "label": "rows",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldIPSurvivalTime": {
+         "display_name": "dshieldIPSurvivalTime",
+         "className": "_dshieldIPSurvivalTime",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldThreatFeed": {
+         "display_name": "dshieldThreatFeed",
+         "className": "_dshieldThreatFeed",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldMSPatchDate": {
+         "display_name": "dshieldMSPatchDate",
+         "className": "_dshieldMSPatchDate",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            },
+            {
+               "schema_item": "dateStr",
+               "schema_value": "dateStr",
+               "type": "input",
+               "label": "dateStr",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldGetMSPatch": {
+         "display_name": "dshieldGetMSPatch",
+         "className": "_dshieldGetMSPatch",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldGetMSPatchCVEs": {
+         "display_name": "dshieldGetMSPatchCVEs",
+         "className": "_dshieldGetMSPatchCVEs",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "dshieldGetMSPatchReplaces": {
+         "display_name": "dshieldGetMSPatchReplaces",
+         "className": "_dshieldGetMSPatchReplaces",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "email",
+               "schema_value": "email",
+               "type": "input",
+               "label": "email",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            },
+            {
+               "schema_item": "msID",
+               "schema_value": "msID",
+               "type": "input",
+               "label": "msID",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
